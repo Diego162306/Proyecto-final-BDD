@@ -1,0 +1,376 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    background: url("../static/img1.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar personalizado */
+
+/* Ajustar la altura del navbar */
+.navbar {
+    padding: 10px 20px;
+    /* Reducir el padding */
+    height: auto;
+    /* Ajuste automático */
+}
+
+/* Asegurar que el contenido no quede detrás del navbar */
+body {
+    padding-top: 60px;
+    /* Ajustar según la altura del navbar */
+}
+
+.navbar {
+    background: rgba(0, 0, 0, 0.8); /* Transparencia elegante */
+    backdrop-filter: blur(10px); /* Efecto de desenfoque */
+    padding: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: #fff !important;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+/* Botón de sesión */
+.navbar-nav .btn-custom {
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar-nav .btn-custom:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Estilos para la versión móvil */
+.navbar:hover {
+    background: rgba(0, 0, 0, 1); /* Se oscurece al pasar el mouse */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Efecto dorado al pasar el mouse */
+}
+
+/* Contenedor general */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjetas de formulario */
+.formbox {
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.formbox h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Inputs personalizados */
+.input {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+.input input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Botón de formulario */
+button {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.btn-form {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* Estilos para la versión móvil */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .formbox {
+        width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contenido {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes moveBackground {
+    0% { background-position: center top; }
+    50% { background-position: center bottom; }
+    100% { background-position: center top; }
+}
+
+body {
+    background: url('../static/img1.png') no-repeat center center fixed;
+    background-size: cover;
+    animation: moveBackground 10s infinite alternate ease-in-out;
+}
+
+/*Estilos listas*/
+.list-group {
+    background: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.list-group:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.list-group-item {
+    background: transparent;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background: #ffcc00; /* Color dorado al pasar el mouse */
+    color: black;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.list-group {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.list-group-item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+/* Estilos generales de la tabla */
+.table {
+    width: 100%;
+    max-width: 800px; /* Ajusta esto según el tamaño deseado */
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Mejorar las cabeceras */
+.table thead {
+    background: #222; /* Fondo oscuro para el encabezado */
+    color: white;
+    text-align: center;
+}
+
+/* Estilizar filas alternas */
+.table tbody tr:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.table tbody tr:nth-child(even) {
+    background: rgba(240, 240, 240, 0.9);
+}
+
+/* Animación al pasar el mouse */
+.table tbody tr:hover {
+    background: #ffcc00;
+    color: black;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Estilos para las celdas de estado */
+.estado {
+    font-weight: bold;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.estado.disponible {
+    color: green;
+}
+
+.estado.ocupada {
+    color: red;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.table {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+
+/* Contenedor de los formularios */
+.form-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Estilos específicos para cada formulario */
+.cancha {
+    border-left: 5px solid #007bff;
+}
+
+.reserva {
+    border-left: 5px solid #28a745;
+}
+
+
+/* Sección principal */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+
+
+
+/* Estilo de cada botón */
+.list-group-item {
+    display: block;
+    padding: 12px 25px;
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #ddd;
+}
+
+/* Efecto hover */
+.list-group-item:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}

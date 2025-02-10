@@ -1,0 +1,84 @@
+CREATE TABLE clientes(
+    identificacion INT PRIMARY KEY AUTO_INCREMENT,
+    Pais VARCHAR(50) NOT NULL,
+    Nombre VARCHAR(50) NOT NULL,
+    Apellido1 VARCHAR(50) NOT NULL,
+    Apellido2 VARCHAR(50) NOT NULL,
+    Direccion VARCHAR(50) NOT NULL,
+    Telefono INT NOT NULL,
+    Observaciones TEXT,
+    FOREIGN KEY (Pais) REFERENCES paises(pais)
+);
+
+CREATE TABLE paises(
+    pais VARCHAR(50) PRIMARY KEY
+);
+
+CREATE TABLE tipo_habitacion (
+    Categoria VARCHAR(100) PRIMARY KEY,
+    Camas INT,
+    Exterior BOOLEAN,
+    Salon BOOLEAN,
+    Terraza BOOLEAN
+);
+
+CREATE TABLE habitaciones (
+    NumHABITACION INT PRIMARY KEY,
+    TIPO_HABITACION VARCHAR(100),
+    FOREIGN KEY (TIPO_HABITACION) REFERENCES tipo_habitacion(Categoria)
+);
+
+CREATE TABLE reserva_habitac (
+    idRESERVA INT AUTO_INCREMENT PRIMARY KEY,
+    FechaENTRADA DATE,
+    FechaSALIDA DATE,
+    IVA DECIMAL(5,2),
+    NumHABITACION INT,
+    CLIENTE INT,
+    FOREIGN KEY (NumHABITACION) REFERENCES habitaciones(NumHABITACION),
+    FOREIGN KEY (CLIENTE) REFERENCES clientes(Identificacion)
+);
+
+CREATE TABLE precio_habitacion (
+    idPrecio INT AUTO_INCREMENT PRIMARY KEY,
+    Precio DECIMAL(10,2),
+    TEMPORADA VARCHAR(100),
+    TIPO_HABITACION VARCHAR(100),
+    FOREIGN KEY (TEMPORADA) REFERENCES temporada(TEMPORADA),
+    FOREIGN KEY (TIPO_HABITACION) REFERENCES tipo_habitacion(Categoria)
+);
+
+CREATE TABLE gastos (
+    idGASTOS INT AUTO_INCREMENT PRIMARY KEY,
+    idRESERVA INT,
+    idSERVICIOS INT,
+    Fecha DATE,
+    Cantidad INT,
+    Precio DECIMAL(10,2),
+    FOREIGN KEY (idRESERVA) REFERENCES reserva_habitac(idRESERVA),
+    FOREIGN KEY (idSERVICIOS) REFERENCES servicios(idSERVICIOS)
+);
+
+CREATE TABLE temporada (
+    TEMPORADA VARCHAR(100) PRIMARY KEY,
+    FechaINICIO DATE,
+    FechaFINAL DATE,
+    Tipo VARCHAR(100)
+);
+
+CREATE TABLE servicios (
+    idSERVICIOS INT AUTO_INCREMENT PRIMARY KEY,
+    NombreSERVICIO VARCHAR(100),
+    Descripcion TEXT,
+    Precio DECIMAL(10,2),
+    IVA DECIMAL(5,2),
+    Fecha DATE,
+    FOREIGN KEY (NombreSERVICIO) REFERENCES tipo_servicio(NombreSERVICIO)
+);
+
+CREATE TABLE tipo_servicio (
+    NombreSERVICIO VARCHAR(100) PRIMARY KEY
+);
+
+
+

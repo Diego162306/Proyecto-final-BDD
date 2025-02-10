@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="hero-section">
+    <div class="hero-text">
+        <h1>Bienvenido al Sistema de Gestión de Canchas</h1>
+        <p>Selecciona una opción del menú para comenzar:</p>
+    </div>
+    <div class="button-contrainer">
+        {% if session['usuario']['rol'] == 'admin' %}
+        <a href="/usuarios" class="list-group-item list-group-item-action">Ver Usuarios</a>
+        <a href="/reservas" class="list-group-item list-group-item-action">Ver Reservas</a>
+        {% endif %}
+        <a href="/canchas" class="list-group-item list-group-item-action">Ver Canchas</a>
+
+
+    </div>
+</div>
+{% endblock %}

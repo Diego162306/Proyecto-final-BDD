@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Reservas</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Fecha Uso</th>
+            <th>Hora Uso</th>
+            <th>Cliente</th>
+            <th>Comprobante</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for reserva in reservas %}
+        <tr>
+            <td>{{ reserva.fechaUso }}</td>
+            <td>{{ reserva.horaUso }}</td> 
+            <td>{{ reserva.nombre }} {{ reserva.apellido }}</td>
+            <td>{{ reserva.comprobanteReserva }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

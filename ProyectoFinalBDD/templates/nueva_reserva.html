@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="form-container reserva">
+    <h1>Crear Nueva Reserva</h1>
+    <form method="POST" action="{{ url_for('nueva_reserva') }}">
+        <div class="mb-3">
+            <label for="fecha_uso" class="form-label">Fecha de Reserva</label>
+            <input type="date" class="form-control" id="fecha_uso" name="fecha_uso" required>
+        </div>
+        <div class="mb-3">
+            <label for="hora_uso" class="form-label">Hora de Uso</label>
+            <input type="time" class="form-control" id="hora_uso" name="hora_uso" required>
+        </div>
+        <div class="mb-3">
+            <label for="id_cancha" class="form-label">Cancha</label>
+            <select class="form-control" id="id_cancha" name="id_cancha" required>
+                {% for cancha in canchas %}
+                <option value="{{ cancha.idCancha }}">{{ cancha.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-reserva">Crear Reserva</button>
+    </form>
+</div>
+{% endblock %}

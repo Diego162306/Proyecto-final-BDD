@@ -1,0 +1,31 @@
+
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <div class="formbox">
+        <h2>Registro</h2>
+        <form method="POST" action="{{ url_for('registro') }}">
+            <div class="input">
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre">
+            </div>
+            <div class="input">
+                <input type="text" id="apellido" name="apellido" required placeholder="Apellido">
+            </div>
+            <div class="input">
+                <input type="text" id="telefono_movil" name="telefono_movil" required placeholder="Teléfono Móvil">
+            </div>
+            <div class="input">
+                <input type="text" id="telefono_convencional" name="telefono_convencional" required placeholder="Teléfono Convencional">
+            </div>
+            <div class="input">
+                <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+            </div>
+            <div class="input">
+                <input type="password" id="password" name="password" required placeholder="Contraseña">
+            </div>
+            <button type="submit" class="btn-form">Registrarse</button>
+            <p class="mt-3">¿Ya tienes cuenta? <a href="{{ url_for('login') }}">Inicia sesión aquí</a>.</p>
+        </form>
+    </div>
+</div>
+{% endblock %}

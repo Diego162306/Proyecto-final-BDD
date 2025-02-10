@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="form-container cancha">
+    <h1>Agregar Nueva Cancha</h1>
+    <form method="POST" action="{{ url_for('nueva_cancha') }}">
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="number" class="form-control" id="precio" name="precio" required>
+        </div>
+        <div class="mb-3">
+            <label for="estado" class="form-label">Estado</label>
+            <select class="form-control" id="estado" name="estado" required>
+                <option value="disponible">Disponible</option>
+                <option value="ocupado">Ocupado</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="tipo" class="form-label">Jugadores</label>
+            <select class="form-control" id="tipo" name="tipo" required>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-cancha">Agregar Cancha</button>
+    </form>
+</div>
+{% endblock %}
