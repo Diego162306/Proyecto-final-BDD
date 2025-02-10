@@ -1,9 +1,14 @@
 <div align="center">
   
-# ⌛ Proyecto Final BDD ⌛
+# <a href="https://github.com/Diego162306/Proyecto-final-BDD"><img src="http://readme-typing-svg.herokuapp.com?font=Ubuntu+Neue&size=17&duration=4000&color=33FF57&center=falso&vCenter=falso&lines=⌛+Proyecto+Final+BDD+⌛" height="90px"></a>
 </div>
 
-## 🏟️ Sistema de gestion de chanchass deportivas 🏟️
+## <a href="https://github.com/Diego162306/Proyecto-final-BDD"><img src="http://readme-typing-svg.herokuapp.com?font=Bebas+Neue&size=17&duration=8000&color=FF5733&center=falso&vCenter=falso&lines=🏟️+Sistema+de+gestion+de+chanchass+deportivas+🏟️" height="90px"></a>
+
+
+
+</div>
+
 
 ## 📍 Atajos 📍
 | TEMA | DESCRIPCIÓN | ATAJO |
