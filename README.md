@@ -8,12 +8,12 @@
 ## 📍 Atajos 📍
 | TEMA | DESCRIPCIÓN | ATAJO |
 |------|-------------|-------|
-| 🔗 **Funcionalidades** | *Caractaeristicas del sistema* |[ver](https://github.com/Jxel117/PooJuego?tab=readme-ov-file#diagrama-de-clases-) |
+| 🔗 **Funcionalidades** | *Caractaeristicas del sistema* |[ver](https://github.com/Diego162306/Proyecto-final-BDD?tab=readme-ov-file#%EF%B8%8F-funcuianlidades-%EF%B8%8F) |
 | 📲 **SQL** | *Backup base de datos* |[ver](https://github.com/Diego162306/Proyecto-final-BDD/blob/main/backup_news%D1%81hema.sql) |
 | 💻 **SQL** | *Code sql* |[ver](https://github.com/Diego162306/Proyecto-final-BDD/blob/main/ProyectoFinalBDD/proyecto.sql) |
 | 📒**COD** | *Codigo base* |[ver](https://github.com/Diego162306/Proyecto-final-BDD/blob/main/ProyectoFinalBDD/app.py) |
-| 📸 **Evidencias** | *Imagenes de evidencia* |[ver]() |
-| ✅ **COLABORADORES** | *Implicados en este proyecto* |[ver]() |
+| 📸 **Evidencias** | *Imagenes de evidencia* |[ver](https://github.com/Diego162306/Proyecto-final-BDD?tab=readme-ov-file#-evidencias-) |
+| ✅ **COLABORADORES** | *Implicados en este proyecto* |[ver](https://github.com/Diego162306/Proyecto-final-BDD?tab=readme-ov-file#-colaboradores-) |
 ----
 ## ⛩️ Funcuianlidades ⛩️
 > El sistema de gestion de canchass deportipas cuenta con las siguientes funcionalidades:
