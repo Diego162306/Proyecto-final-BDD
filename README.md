@@ -16,10 +16,36 @@
 | ✅ **COLABORADORES** | *Implicados en este proyecto* |[ver]() |
 ----
 ## ⛩️ Funcuianlidades ⛩️
-
-* Este sitema permitira realizar 
+> El sistema de gestion de canchass deportipas cuenta con las siguientes funcionalidades:
+> * Registro de usuarios con rol "Admin-Cliente"
+>  * * **Admin:** Este rol permitira:
+>    * Visualisar los usuarios, reservas y canchas
+>    * Agregar nuevas canchas
+>  * * **Cliente**
+>    * Visualizar las canchas
+>    * Agregar una nueva reserva 
 
 ## 💈 Evidencias 💈
+> Se addjunta cada una de las capturas en donde mostraremos la matoria de nuestro proyecto:
+> * Imagen inicial login
+>   <p align="left"> <img src="https://raw.githubusercontent.com/Diego162306/Proyecto-final-BDD/refs/heads/main/ProyectoFinalBDD/static/IMGevidencias/Captura%20desde%202025-02-10%2014-19-45.png"  width="600" height="450"></p></p>
+> * Imgane registro de nuevo usuario
+>   <p align="left"> <img src="https://raw.githubusercontent.com/Diego162306/Proyecto-final-BDD/refs/heads/main/ProyectoFinalBDD/static/IMGevidencias/Captura%20desde%202025-02-10%2014-20-03.png" width="600" height="450"></p></p>
+> * Imagen Pagina principal perfil "Admin"
+>   <p align="left"> <img src="https://raw.githubusercontent.com/Diego162306/Proyecto-final-BDD/refs/heads/main/ProyectoFinalBDD/static/IMGevidencias/Captura%20desde%202025-02-10%2014-39-01.png"  width="600" height="450"></p></p>
+> * Imagen seccion "Canchas"
+>   <p align="left"> <img src="https://raw.githubusercontent.com/Diego162306/Proyecto-final-BDD/refs/heads/main/ProyectoFinalBDD/static/IMGevidencias/Captura%20desde%202025-02-10%2014-39-24.png"  width="600" height="450"></p></p>
+> * Imagen seccion "Usuarios"
+>   <p align="left"> <img src="https://raw.githubusercontent.com/Diego162306/Proyecto-final-BDD/refs/heads/main/ProyectoFinalBDD/static/IMGevidencias/Captura%20desde%202025-02-10%2014-39-36.png"  width="600" height="450"></p></p>
+> * Imagen seccion "Agregar NUeva Cancha"
+>   <p align="left"> <img src="https://raw.githubusercontent.com/Diego162306/Proyecto-final-BDD/refs/heads/main/ProyectoFinalBDD/static/IMGevidencias/Captura%20desde%202025-02-10%2014-39-51.png"  width="600" height="450"></p></p>
+> * Imagen Pagina principal perfil "Cliente"
+>   <p align="left"> <img src="https://raw.githubusercontent.com/Diego162306/Proyecto-final-BDD/refs/heads/main/ProyectoFinalBDD/static/IMGevidencias/Captura%20desde%202025-02-10%2014-59-01.png"  width="600" height="450"></p></p>
+> * Imagen seccion "Canchas"
+>   <p align="left"> <img src="https://raw.githubusercontent.com/Diego162306/Proyecto-final-BDD/refs/heads/main/ProyectoFinalBDD/static/IMGevidencias/Captura%20desde%202025-02-10%2014-59-09.png"  width="600" height="450"></p></p>
+> * Imgane seccion "Nueva reserva"
+>   <p align="left"> <img src="https://raw.githubusercontent.com/Diego162306/Proyecto-final-BDD/refs/heads/main/ProyectoFinalBDD/static/IMGevidencias/Captura%20desde%202025-02-10%2014-59-16.png"  width="600" height="450"></p></p>
+### 
 
 ### 🌟 Colaboradores 🌟
 <div style="display: flex; justify-content: center; gap: 20px;">
